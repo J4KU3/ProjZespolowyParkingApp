@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\apibackendparkingapp\\apibackendparkingapp\\apibackendparkingapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\apibackendparkingapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\apibackendparkingapp\\apibackendparkingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\apibackendparkingapp\\apibackendparkingapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\appsettings.json",
+              "RelativeToolTip": "ApiBackendParkingApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T08:31:55.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiBackendParkingApp.http",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp.http",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\ApiBackendParkingApp.http",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp.http",
+              "RelativeToolTip": "ApiBackendParkingApp\\ApiBackendParkingApp.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-28T08:31:53.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ApiBackendParkingApp\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T08:25:05.304Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
