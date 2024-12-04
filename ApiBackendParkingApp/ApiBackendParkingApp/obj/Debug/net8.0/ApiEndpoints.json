@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "ApiBackendParkingApp.Controllers.ParkingLotController",
+    "Method": "ParkingSpaceList",
+    "RelativePath": "api/ParkingLot/ParkingSPace",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ApiBackendParkingApp.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

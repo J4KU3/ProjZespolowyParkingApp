@@ -1,18 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\",
+  "WorkspaceRootPath": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\apibackendparkingapp\\apibackendparkingapp\\apibackendparkingapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\apibackendparkingapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\repositories\\parkinglotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\repositories\\parkinglotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\apibackendparkingapp\\apibackendparkingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\repositories\\interfaces\\iparkinglotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\repositories\\interfaces\\iparkinglotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\utilis\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\utilis\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\controllers\\parkinglotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\controllers\\parkinglotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\services\\parkinglotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\services\\parkinglotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\services\\interfaces\\iparkinglotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\services\\interfaces\\iparkinglotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\interfaces\\idbinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\interfaces\\idbinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\apibackendparkingapp\\apibackendparkingapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Program.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Program.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Program.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:53:23.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\appsettings.json",
-              "RelativeDocumentMoniker": "ApiBackendParkingApp\\appsettings.json",
-              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\appsettings.json",
-              "RelativeToolTip": "ApiBackendParkingApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-28T08:31:55.671Z",
+              "Title": "IParkingLotRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Repositories\\Interfaces\\IParkingLotRepository.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Repositories\\Interfaces\\IParkingLotRepository.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Repositories\\Interfaces\\IParkingLotRepository.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Repositories\\Interfaces\\IParkingLotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:32:12.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApiBackendParkingApp.http",
-              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp.http",
-              "RelativeDocumentMoniker": "ApiBackendParkingApp\\ApiBackendParkingApp.http",
-              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp.http",
-              "RelativeToolTip": "ApiBackendParkingApp\\ApiBackendParkingApp.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-11-28T08:31:53.091Z",
+              "Title": "ParkingLotRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Repositories\\ParkingLotRepository.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Repositories\\ParkingLotRepository.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Repositories\\ParkingLotRepository.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Repositories\\ParkingLotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:31:45.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ApiBackendParkingApp\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ParkingLotService.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Services\\ParkingLotService.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Services\\ParkingLotService.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Services\\ParkingLotService.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Services\\ParkingLotService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:47:12.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataBaseConfig.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Utilis\\DataBaseConfig.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Utilis\\DataBaseConfig.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Utilis\\DataBaseConfig.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Utilis\\DataBaseConfig.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwBYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T10:43:57.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IParkingLotService.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Services\\Interfaces\\IParkingLotService.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Services\\Interfaces\\IParkingLotService.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Services\\Interfaces\\IParkingLotService.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Services\\Interfaces\\IParkingLotService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:46:01.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ParkingLotController.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Controllers\\ParkingLotController.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Controllers\\ParkingLotController.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Controllers\\ParkingLotController.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Controllers\\ParkingLotController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:13:59.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDbInteractions.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Interfaces\\IDbInteractions.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Interfaces\\IDbInteractions.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Interfaces\\IDbInteractions.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Interfaces\\IDbInteractions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:53:44.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ApiBackendParkingApp\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:14:02.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiBackendParkingApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\appsettings.json",
+              "RelativeToolTip": "ApiBackendParkingApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-28T08:25:05.304Z",
+              "WhenOpened": "2024-11-28T08:31:55.671Z",
               "EditorCaption": ""
             }
           ]
