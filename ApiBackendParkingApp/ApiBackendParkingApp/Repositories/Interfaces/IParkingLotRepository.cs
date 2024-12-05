@@ -2,8 +2,8 @@
 
 namespace ApiBackendParkingApp.Repositories.Interfaces
 {
-    public interface IParkingLotRepository
+    public interface IParkingLotRepository:IDisposable
     {
-
+        public Task<IEnumerable<PlaceModelDao>> GetAllPlacesAsync();
     }
 }
