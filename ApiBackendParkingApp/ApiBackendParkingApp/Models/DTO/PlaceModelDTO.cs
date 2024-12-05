@@ -1,6 +1,6 @@
-﻿namespace ApiBackendParkingApp.Models.DAO
+﻿namespace ApiBackendParkingApp.Models.DTO
 {
-    public class PlaceModelDao
+    public class PlaceModelDTO
     {
         public int Place_Number { get; set; }
         public int Sector_ID { get; set; }

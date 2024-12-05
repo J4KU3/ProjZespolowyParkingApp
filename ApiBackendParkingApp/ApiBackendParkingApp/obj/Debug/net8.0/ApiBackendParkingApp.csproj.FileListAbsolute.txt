@@ -100,3 +100,4 @@ C:\Users\kuba2\OneDrive\Pulpit\ProjektZespolowy_ParkingApp\ProjZespolowyParkingA
 C:\Users\kuba2\OneDrive\Pulpit\ProjektZespolowy_ParkingApp\ProjZespolowyParkingApp\ApiBackendParkingApp\ApiBackendParkingApp\obj\Debug\net8.0\ApiBackendParkingApp.genruntimeconfig.cache
 C:\Users\kuba2\OneDrive\Pulpit\ProjektZespolowy_ParkingApp\ProjZespolowyParkingApp\ApiBackendParkingApp\ApiBackendParkingApp\obj\Debug\net8.0\ref\ApiBackendParkingApp.dll
 C:\Users\kuba2\OneDrive\Pulpit\ProjektZespolowy_ParkingApp\ProjZespolowyParkingApp\ApiBackendParkingApp\ApiBackendParkingApp\bin\Debug\net8.0\Dapper.dll
+C:\Users\kuba2\OneDrive\Pulpit\ProjektZespolowy_ParkingApp\ProjZespolowyParkingApp\ApiBackendParkingApp\ApiBackendParkingApp\bin\Debug\net8.0\AutoMapper.dll

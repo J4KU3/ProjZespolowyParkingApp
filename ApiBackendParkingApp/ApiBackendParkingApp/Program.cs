@@ -1,19 +1,33 @@
 using ApiBackendParkingApp.Interfaces;
+using ApiBackendParkingApp.Models.Mapping;
 using ApiBackendParkingApp.Repositories;
 using ApiBackendParkingApp.Repositories.Interfaces;
 using ApiBackendParkingApp.Services;
 using ApiBackendParkingApp.Services.Interfaces;
 using ApiBackendParkingApp.Utilis;
+using AutoMapper;
 using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new ParkinLotMappingProfile());
+    mc.AddProfile(new SectorMappingProfile());
+    mc.AddProfile(new PlaceMappingProfile());
+});
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
 
 builder.Services.AddScoped<IParkingLotRepository, ParkingLotRepository>();
 builder.Services.AddScoped<IParkingLotService, ParkingLotService>();
