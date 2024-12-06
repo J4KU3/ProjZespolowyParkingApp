@@ -1,4 +1,5 @@
 ﻿
+using ApiBackendParkingApp.Models.DAO;
 using ApiBackendParkingApp.Models.DTO;
 using ApiBackendParkingApp.Repositories.Interfaces;
 using ApiBackendParkingApp.Services.Interfaces;
@@ -77,9 +78,18 @@ namespace ApiBackendParkingApp.Services
             }
         }
 
-        public Task<int> AddReservationAsync(ParkingLotModelDTO parkingLotModelDTO)
+        public async Task<int> AddReservationAsync(ParkingLotModelDTO parkingLotModelDTO)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var dao = _mapper.Map<ParkingLotModelDao>(parkingLotModelDTO);
+                    return await _parkingLotRepository.AddReservationAsync(dao);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
        

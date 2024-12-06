@@ -64,11 +64,11 @@
             "type": "string",
             "nullable": true
           },
-          "startDate": {
+          "start_Time": {
             "type": "string",
             "format": "date-time"
           },
-          "endDate": {
+          "end_Time": {
             "type": "string",
             "format": "date-time"
           },

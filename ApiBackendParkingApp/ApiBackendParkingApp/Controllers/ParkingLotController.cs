@@ -63,7 +63,20 @@ namespace ApiBackendParkingApp.Controllers
         [HttpPost("AddNewReservation")]
         public async Task<IActionResult> AddReservation([FromBody] ParkingLotModelDTO newReservation) 
         {
-            throw new NotImplementedException();
+            try
+            {
+                var Reservations = await _parkingLotService.AddReservationAsync(newReservation);
+                if (Reservations > 0)
+                {
+                    return Ok(new { Message = "Rezerwacja została zrobiona poprawnie" });
+                }
+                return BadRequest();
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, new {Message = "Wystąpił błąd podczas dodawania" });
+            }
+            
         }
 
     }
