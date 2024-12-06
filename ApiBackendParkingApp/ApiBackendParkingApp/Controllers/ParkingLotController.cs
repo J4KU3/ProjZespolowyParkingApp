@@ -1,4 +1,5 @@
-﻿using ApiBackendParkingApp.Services.Interfaces;
+﻿using ApiBackendParkingApp.Models.DTO;
+using ApiBackendParkingApp.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -40,6 +41,29 @@ namespace ApiBackendParkingApp.Controllers
                 Dispose();
             }
 
+        }
+        [HttpGet("AllSectors")]
+        public async Task<IActionResult> GetSectors()
+        {
+            try
+            {
+                var Sectors = await _parkingLotService.GetAllSectorsAsync();
+                return Ok(Sectors);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+            finally
+            {
+                Dispose();
+            }
+        }
+
+        [HttpPost("AddNewReservation")]
+        public async Task<IActionResult> AddReservation([FromBody] ParkingLotModelDTO newReservation) 
+        {
+            throw new NotImplementedException();
         }
 
     }

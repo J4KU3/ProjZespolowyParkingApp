@@ -1,5 +1,4 @@
-﻿using ApiBackendParkingApp.Controllers;
-using ApiBackendParkingApp.Models.DAO;
+﻿
 using ApiBackendParkingApp.Models.DTO;
 using ApiBackendParkingApp.Repositories.Interfaces;
 using ApiBackendParkingApp.Services.Interfaces;
@@ -22,7 +21,7 @@ namespace ApiBackendParkingApp.Services
 
         public void Dispose()
         {
-            if (_isDisposed) 
+            if (_isDisposed)
                 return;
 
             _parkingLotRepository.Dispose();
@@ -52,5 +51,37 @@ namespace ApiBackendParkingApp.Services
                 
             }
         }
+
+        public async Task<IEnumerable<SectorModelDTO>> GetAllSectorsAsync()
+        {
+            try
+            {
+                var dao = await _parkingLotRepository.GetAllSectorsAsync();
+
+                var result = new List<SectorModelDTO>();
+
+                foreach (var sectors in dao)
+                {
+                    Console.WriteLine(sectors);
+                    result.Add(_mapper.Map<SectorModelDTO>(sectors));
+                }
+
+                return result;
+
+            }
+            catch (Exception ex)
+            {
+                 Console.WriteLine(ex.Message);
+                throw ex;
+
+            }
+        }
+
+        public Task<int> AddReservationAsync(ParkingLotModelDTO parkingLotModelDTO)
+        {
+            throw new NotImplementedException();
+        }
+
+       
     }
 }

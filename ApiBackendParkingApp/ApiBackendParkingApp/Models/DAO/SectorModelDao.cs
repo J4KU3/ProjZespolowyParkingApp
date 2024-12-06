@@ -3,7 +3,7 @@
     public class SectorModelDAO
     {
         public int Sector_ID { get; set; }
-        public string Sector_Name { get; set; }= string.Empty;
+        public string Sector_Name { get; set; } = string.Empty;
 
     }
 }

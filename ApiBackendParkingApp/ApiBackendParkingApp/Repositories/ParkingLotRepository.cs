@@ -32,5 +32,18 @@ namespace ApiBackendParkingApp.Repositories
             var result = await _db.QueryAsync<PlaceModelDao>(sql, null);
             return result;
         }
+
+        public Task<int> AddReservationAsync(ParkingLotModelDao modelDao)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<SectorModelDAO>> GetAllSectorsAsync()
+        {
+            string sql = @"Select *
+                                From Sectors";
+            var result = await _db.QueryAsync<SectorModelDAO>(sql, null);
+            return result;
+        }
     }
 }

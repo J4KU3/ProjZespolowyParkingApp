@@ -12,6 +12,8 @@ namespace ApiBackendParkingApp.Models.Mapping
                 .ForMember(dest => dest.Sector_ID, opt => opt.MapFrom(src => src.Sector_ID))
                 .ForMember(dest => dest.Sector_Name, opt => opt.MapFrom(src => src.Sector_Name))
                 .ReverseMap();
+
+
         }
     }
 }
