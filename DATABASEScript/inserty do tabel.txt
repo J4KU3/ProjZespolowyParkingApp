@@ -1,9 +1,9 @@
+SET IDENTITY_INSERT dbo.Sectors ON 
+INSERT dbo.Sectors (Sector_ID, Sector_Name) VALUES (1, 'S1')
+INSERT dbo.Sectors (Sector_ID, Sector_Name) VALUES (2, 'S2')
+SET IDENTITY_INSERT dbo.Sectors OFF
 
-INSERT [dbo].[Places] ([Place_Number], [Sector_ID]) VALUES (1, 1)
-INSERT [dbo].[Places] ([Place_Number], [Sector_ID]) VALUES (2, 1)
-GO
 SET IDENTITY_INSERT [dbo].[Places] ON 
-
 INSERT [dbo].[Places] ([Place_Number], [Sector_ID]) VALUES (1, 1)
 INSERT [dbo].[Places] ([Place_Number], [Sector_ID]) VALUES (2, 1)
 INSERT [dbo].[Places] ([Place_Number], [Sector_ID]) VALUES (3, 1)
