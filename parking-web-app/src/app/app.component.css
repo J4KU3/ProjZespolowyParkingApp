@@ -1,0 +1,31 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    min-height: 100px;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 10px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+footer {
+    min-height: 50px;
+    text-align: center;
+
+    padding: 10px 10px;
+    background: #007BFF;
+    color: white;
+}
+
+app-main-container{
+    flex: 1;
+}
