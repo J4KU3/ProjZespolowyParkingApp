@@ -29,6 +29,18 @@
         }
       }
     },
+    "/api/ParkingLot/AllReservation": {
+      "get": {
+        "tags": [
+          "ParkingLot"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/ParkingLot/AddNewReservation": {
       "post": {
         "tags": [

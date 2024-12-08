@@ -60,6 +60,22 @@ namespace ApiBackendParkingApp.Controllers
             }
         }
 
+        [HttpGet("AllReservation")]
+        public async Task<IActionResult> GetAllReservation()
+        {
+            try
+            {
+                var reservation = await _parkingLotService.GetAllReservationAsync();
+                return Ok(reservation);
+            }
+            catch (Exception)
+            {
+
+                return NotFound();
+            }
+            finally { Dispose(); }
+        }
+
         [HttpPost("AddNewReservation")]
         public async Task<IActionResult> AddReservation([FromBody] ParkingLotModelDTO newReservation) 
         {
@@ -75,6 +91,10 @@ namespace ApiBackendParkingApp.Controllers
             catch (Exception)
             {
                 return StatusCode(500, new {Message = "Wystąpił błąd podczas dodawania" });
+            }
+            finally
+            {
+                Dispose();
             }
             
         }

@@ -27,6 +27,16 @@
   },
   {
     "ContainingType": "ApiBackendParkingApp.Controllers.ParkingLotController",
+    "Method": "GetAllReservation",
+    "RelativePath": "api/ParkingLot/AllReservation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBackendParkingApp.Controllers.ParkingLotController",
     "Method": "GetSectors",
     "RelativePath": "api/ParkingLot/AllSectors",
     "HttpMethod": "GET",

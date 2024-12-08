@@ -41,6 +41,14 @@ namespace ApiBackendParkingApp.Repositories
             return result;
         }
 
+        public async Task<IEnumerable<ParkingLotModelDao>> GetAllReservationAsync()
+        {
+            string sql = @"SELECT * 
+                            FROM Parking_Lot";
+            var result = await _db.QueryAsync<ParkingLotModelDao>(sql, null);
+            return result;
+        }
+
         public async Task<int> AddReservationAsync(ParkingLotModelDao modelDao)
         {
             string checkAvailabilitySql = @"
@@ -55,7 +63,6 @@ namespace ApiBackendParkingApp.Repositories
             try
             {
 
-                // Sprawdzamy, czy miejsce parkingowe jest dostępne w podanym czasie
                 var isAvailable = await _db.QueryFirstOrDefaultAsync<int>(checkAvailabilitySql, new
                 {
                     Place_Number = modelDao.Place_Number,
@@ -65,12 +72,10 @@ namespace ApiBackendParkingApp.Repositories
 
                 if (isAvailable > 0)
                 {
-                    // Miejsce jest już zajęte w tym czasie, rzucamy wyjątek
-                    throw new InvalidOperationException($"Place number {modelDao.Place_Number} is already reserved during the specified time.");
+                  throw new InvalidOperationException($"Place number {modelDao.Place_Number} is already reserved during the specified time.");
                 }
 
-                // Jeśli miejsce jest dostępne, zapisujemy rezerwację
-                
+                            
 
                 var result = await _db.ExecuteAsync(sql, new
                 {

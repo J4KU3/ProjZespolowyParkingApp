@@ -63,7 +63,6 @@ namespace ApiBackendParkingApp.Services
 
                 foreach (var sectors in dao)
                 {
-                    Console.WriteLine(sectors);
                     result.Add(_mapper.Map<SectorModelDTO>(sectors));
                 }
 
@@ -75,6 +74,27 @@ namespace ApiBackendParkingApp.Services
                  Console.WriteLine(ex.Message);
                 throw ex;
 
+            }
+        }
+        public async Task<IEnumerable<ParkingLotModelDTO>> GetAllReservationAsync()
+        {
+            try
+            {
+                var dao = await _parkingLotRepository.GetAllReservationAsync();
+
+                var result = new List<ParkingLotModelDTO>();
+
+                foreach (var reservation in dao)
+                {
+                    Console.WriteLine(reservation);
+                    result.Add(_mapper.Map<ParkingLotModelDTO>(reservation));
+                }
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
@@ -91,7 +111,5 @@ namespace ApiBackendParkingApp.Services
                 throw;
             }
         }
-
-       
     }
 }

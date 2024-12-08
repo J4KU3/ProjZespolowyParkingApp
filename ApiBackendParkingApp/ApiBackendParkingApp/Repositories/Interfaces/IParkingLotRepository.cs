@@ -6,6 +6,7 @@ namespace ApiBackendParkingApp.Repositories.Interfaces
     {
         public Task<IEnumerable<PlaceModelDao>> GetAllPlacesAsync();
         public Task<IEnumerable<SectorModelDAO>> GetAllSectorsAsync();
+        public Task<IEnumerable<ParkingLotModelDao>> GetAllReservationAsync();
         public Task<int> AddReservationAsync(ParkingLotModelDao modelDao);
     }
 }
