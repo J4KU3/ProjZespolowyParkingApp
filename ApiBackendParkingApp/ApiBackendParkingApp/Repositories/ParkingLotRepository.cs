@@ -72,7 +72,7 @@ namespace ApiBackendParkingApp.Repositories
 
                 if (isAvailable > 0)
                 {
-                  throw new InvalidOperationException($"Place number {modelDao.Place_Number} is already reserved during the specified time.");
+                  throw new InvalidOperationException($"Miejsce {modelDao.Place_Number} jest już zarezewowane w tym przedziale czasowym.");
                 }
 
                             
@@ -91,9 +91,28 @@ namespace ApiBackendParkingApp.Repositories
             {
                 throw ex;
             }
-                
+        }
 
-            throw new NotImplementedException();
+        public async Task<int> CancelReservationAsync(ParkingLotModelDao reservationToCancel)
+        {
+            var sql = @"DELETE FROM Parking_Lot 
+                        WHERE Parking_Lot_ID = @Parking_Lot_ID 
+                        AND License_Plate = @License_Plate";
+
+
+            try
+            {
+                var result = await _db.ExecuteAsync(sql,new {
+                    Parking_Lot_ID = reservationToCancel.Parking_Lot_ID,
+                    License_Plate = reservationToCancel.License_Plate
+                });
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("Błąd podczas anulowania rezerwacji");
+            }
         }
 
         

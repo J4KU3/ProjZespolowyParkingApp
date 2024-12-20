@@ -9,5 +9,7 @@ namespace ApiBackendParkingApp.Services.Interfaces
         public Task<IEnumerable<SectorModelDTO>> GetAllSectorsAsync();
         public Task<IEnumerable<ParkingLotModelDTO>> GetAllReservationAsync();
         public Task<int> AddReservationAsync(ParkingLotModelDTO parkingLotModelDTO);
+
+        public Task<int> CancelReservationAsync(ParkingLotModelDTO reservationToCancelDTO);
     }
 }

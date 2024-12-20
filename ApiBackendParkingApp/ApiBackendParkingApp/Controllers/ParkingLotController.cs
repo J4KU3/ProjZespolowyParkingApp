@@ -1,4 +1,5 @@
-﻿using ApiBackendParkingApp.Models.DTO;
+﻿using ApiBackendParkingApp.Models.DAO;
+using ApiBackendParkingApp.Models.DTO;
 using ApiBackendParkingApp.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -97,6 +98,31 @@ namespace ApiBackendParkingApp.Controllers
                 Dispose();
             }
             
+        }
+
+        [HttpDelete("CancelResevation")]
+
+        public async Task<IActionResult> DeleteReservation([FromBody] ParkingLotModelDTO resevationToCancel)
+        {
+            try
+            {
+                var reservation = await _parkingLotService.CancelReservationAsync(resevationToCancel);
+
+                if (reservation > 0)
+                {
+                    return Ok("Rezerwacja została anulowana poprawnie");
+                }
+                return BadRequest();
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, new { Message = "Wystąpił błąd podczas anulowania rezerwacji" });  
+            }
+            finally 
+            {
+                Dispose();
+            }
         }
 
     }

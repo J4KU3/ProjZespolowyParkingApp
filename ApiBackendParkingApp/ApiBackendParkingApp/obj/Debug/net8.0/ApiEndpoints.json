@@ -44,5 +44,21 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBackendParkingApp.Controllers.ParkingLotController",
+    "Method": "DeleteReservation",
+    "RelativePath": "api/ParkingLot/CancelResevation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resevationToCancel",
+        "Type": "ApiBackendParkingApp.Models.DTO.ParkingLotModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

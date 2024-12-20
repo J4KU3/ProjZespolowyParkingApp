@@ -61,6 +61,27 @@
           }
         }
       }
+    },
+    "/api/ParkingLot/CancelResevation": {
+      "delete": {
+        "tags": [
+          "ParkingLot"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParkingLotModelDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {

@@ -105,10 +105,24 @@ namespace ApiBackendParkingApp.Services
                 var dao = _mapper.Map<ParkingLotModelDao>(parkingLotModelDTO);
                     return await _parkingLotRepository.AddReservationAsync(dao);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
+            }
+        }
+
+        public async Task<int> CancelReservationAsync(ParkingLotModelDTO reservationToCancelDTO)
+        {
+            try
+            {
+                var dao = _mapper.Map<ParkingLotModelDao>(reservationToCancelDTO);
+                return await _parkingLotRepository.CancelReservationAsync(dao);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
             }
         }
     }
