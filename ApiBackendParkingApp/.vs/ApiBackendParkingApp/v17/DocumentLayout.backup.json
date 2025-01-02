@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\repositories\\parkinglotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\repositories\\parkinglotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\services\\parkinglotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\services\\parkinglotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\controllers\\parkinglotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\controllers\\parkinglotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\services\\parkinglotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|solutionrelative:apibackendparkingapp\\services\\parkinglotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D79F7F55-C939-4BB1-B74C-4BDBEEC5330F}|ApiBackendParkingApp\\ApiBackendParkingApp.csproj|c:\\users\\kuba2\\onedrive\\pulpit\\projektzespolowy_parkingapp\\projzespolowyparkingapp\\apibackendparkingapp\\apibackendparkingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ParkingLotRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Repositories\\ParkingLotRepository.cs",
-              "RelativeDocumentMoniker": "ApiBackendParkingApp\\Repositories\\ParkingLotRepository.cs",
-              "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Repositories\\ParkingLotRepository.cs*",
-              "RelativeToolTip": "ApiBackendParkingApp\\Repositories\\ParkingLotRepository.cs*",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAGMAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T10:11:33.363Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -49,14 +32,14 @@
               "RelativeDocumentMoniker": "ApiBackendParkingApp\\Controllers\\ParkingLotController.cs",
               "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Controllers\\ParkingLotController.cs",
               "RelativeToolTip": "ApiBackendParkingApp\\Controllers\\ParkingLotController.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAUwGwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAFcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T10:31:12.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Program.cs",
               "RelativeDocumentMoniker": "ApiBackendParkingApp\\Program.cs",
@@ -68,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ParkingLotService.cs",
               "DocumentMoniker": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Services\\ParkingLotService.cs",
               "RelativeDocumentMoniker": "ApiBackendParkingApp\\Services\\ParkingLotService.cs",
               "ToolTip": "C:\\Users\\kuba2\\OneDrive\\Pulpit\\ProjektZespolowy_ParkingApp\\ProjZespolowyParkingApp\\ApiBackendParkingApp\\ApiBackendParkingApp\\Services\\ParkingLotService.cs",
               "RelativeToolTip": "ApiBackendParkingApp\\Services\\ParkingLotService.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAUwHwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAuwKwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T08:54:24.086Z",
               "EditorCaption": ""

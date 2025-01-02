@@ -16,6 +16,7 @@ namespace ApiBackendParkingApp.Models.Mapping
                 .ForMember(dest => dest.Start_Time, opt => opt.MapFrom(src => src.Start_Time))
                 .ForMember(dest => dest.End_Time, opt => opt.MapFrom(src => src.End_Time))
                 .ForMember(dest => dest.Place_Number, opt => opt.MapFrom(src => src.Place_Number))
+                .ForMember(dest => dest.ClientEmail, opt => opt.MapFrom(src => src.ClientEmail))
                 .ReverseMap();
        }
     }

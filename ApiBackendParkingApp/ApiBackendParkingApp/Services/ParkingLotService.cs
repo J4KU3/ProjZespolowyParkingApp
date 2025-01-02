@@ -1,9 +1,10 @@
-﻿
-using ApiBackendParkingApp.Models.DAO;
+﻿using ApiBackendParkingApp.Models.DAO;
 using ApiBackendParkingApp.Models.DTO;
 using ApiBackendParkingApp.Repositories.Interfaces;
 using ApiBackendParkingApp.Services.Interfaces;
 using AutoMapper;
+using System.Net;
+using System.Net.Mail;
 
 namespace ApiBackendParkingApp.Services
 {
@@ -103,7 +104,9 @@ namespace ApiBackendParkingApp.Services
             try
             {
                 var dao = _mapper.Map<ParkingLotModelDao>(parkingLotModelDTO);
-                    return await _parkingLotRepository.AddReservationAsync(dao);
+                var result = await _parkingLotRepository.AddReservationAsync(dao);
+               
+                return result;
             }
             catch (Exception ex)
             {
@@ -124,6 +127,53 @@ namespace ApiBackendParkingApp.Services
 
                 throw ex;
             }
+        }
+
+        public async Task<bool> SendConfirmEmail(ParkingLotModelDTO parkingLotModelDTO)
+        {
+
+            var allReservation = await GetAllReservationAsync();
+            try
+            {
+                var findReservationToSendEmail = allReservation.FirstOrDefault(r => r.License_Plate == parkingLotModelDTO.License_Plate
+                                                                                      && r.Start_Time == parkingLotModelDTO.Start_Time
+                                                                                       && r.End_Time == parkingLotModelDTO.End_Time
+                                                                                       && r.Place_Number == parkingLotModelDTO.Place_Number);
+                if (findReservationToSendEmail != null)
+                {
+                    Console.WriteLine(findReservationToSendEmail.Parking_Lot_ID);
+
+                    SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
+                    {
+                        Port = 587,
+                        Credentials = new NetworkCredential("kuba24481pl@gmail.com", "zaps rlag pvuy tnwp"),
+                        EnableSsl = true
+                    };
+
+                    var mailMessage = new MailMessage
+                    {
+                        From = new MailAddress("kuba24481pl@gmail.com", "Reservation Service"), // Adres nadawcy
+                        Subject = "Reservation Confirmation",
+                        Body = $"Thank you for your reservation! Your reservation ID is: {findReservationToSendEmail.Parking_Lot_ID}.",
+                        IsBodyHtml = false,
+                    };
+
+                    mailMessage.To.Add(parkingLotModelDTO.ClientEmail);
+                    await smtpClient.SendMailAsync(mailMessage);
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+           
         }
     }
 }

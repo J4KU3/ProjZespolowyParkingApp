@@ -11,5 +11,6 @@ namespace ApiBackendParkingApp.Services.Interfaces
         public Task<int> AddReservationAsync(ParkingLotModelDTO parkingLotModelDTO);
 
         public Task<int> CancelReservationAsync(ParkingLotModelDTO reservationToCancelDTO);
+        public Task<bool> SendConfirmEmail(ParkingLotModelDTO parkingLotModelDTO);
     }
 }

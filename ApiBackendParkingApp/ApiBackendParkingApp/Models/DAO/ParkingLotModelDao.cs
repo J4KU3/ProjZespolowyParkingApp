@@ -6,7 +6,8 @@
         public string License_Plate { get; set; } = string.Empty;
         public DateTime Start_Time { get; set; }
         public DateTime End_Time { get; set; }
-        public int Place_Number { get;set; }
+        public int Place_Number { get; set; }
+        public string ClientEmail { get; set; } = string.Empty;
 
     }
 }

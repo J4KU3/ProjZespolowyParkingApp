@@ -85,7 +85,9 @@ namespace ApiBackendParkingApp.Controllers
                 var Reservations = await _parkingLotService.AddReservationAsync(newReservation);
                 if (Reservations > 0)
                 {
+                    var FindReservation = await _parkingLotService.SendConfirmEmail(newReservation);
                     return Ok(new { Message = "Rezerwacja została zrobiona poprawnie" });
+
                 }
                 return BadRequest();
             }

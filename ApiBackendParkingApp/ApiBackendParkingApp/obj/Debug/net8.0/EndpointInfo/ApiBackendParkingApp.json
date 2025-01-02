@@ -108,6 +108,10 @@
           "place_Number": {
             "type": "integer",
             "format": "int32"
+          },
+          "clientEmail": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
