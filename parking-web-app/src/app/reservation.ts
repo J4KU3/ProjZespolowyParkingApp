@@ -4,4 +4,5 @@ export interface Reservation {
     license_Plate: string,
     start_Time: string,
     end_Time: string,
+    ClientEmail: string
 }

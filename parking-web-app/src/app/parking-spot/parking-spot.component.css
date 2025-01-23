@@ -8,16 +8,18 @@
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 10px;
+    background-color: #2f3136;
+    color:#d5d8db;
 }
 
 .spot:hover:not(.selected) {
-    background-color: #d1ffd1;
+    background-color: #34e718;
 }
 
 .selected{
-    background-color: #4be253;
+    background-color: #287e29;
 }
 
 img {
-    width: 80px;
+    width: 60px;
 }

@@ -7,11 +7,13 @@ import { Reservation } from '../reservation';
 import { FormsModule } from '@angular/forms';
 import { concatMap } from 'rxjs';
 import { ParkingSpotComponent } from '../parking-spot/parking-spot.component';
+import { Cancellation } from '../cancellation';
+import { PopupCardComponent } from '../popup-card/popup-card.component';
 
 @Component({
   selector: 'app-main-container',
   standalone: true,
-  imports: [NgFor, NgIf, FormsModule, ParkingSpotComponent],
+  imports: [NgFor, NgIf, FormsModule, ParkingSpotComponent, PopupCardComponent],
   templateUrl: './main-container.component.html',
   styleUrl: './main-container.component.css',
 })
@@ -21,21 +23,27 @@ export class MainContainerComponent implements OnInit {
   parkingSpots: ParkingSpot[] = []
   selectedSector?: Sector;
   selectedSpot?: ParkingSpot;
-  formInput: {start_Date: string, end_Date: string, start_Time: string, end_Time: string, license_Plate: string} = {
+  formInput: {start_Date: string, end_Date: string, start_Time: string, end_Time: string, license_Plate: string, ClientEmail: string} = {
     start_Time: '',
     end_Time: '',
     start_Date: '',
     end_Date: '',
     license_Plate: '',
+    ClientEmail: ''
   }
-  
-  
+  cancelInput: {license_Plate: string, parking_lot_ID: string} = {
+    license_Plate: '',
+    parking_lot_ID: '',
+  }
+  showPopup: boolean = false;
+  response: string = '';
+
   constructor(private parkingService: ParkingService) {}
 
   selectSector(sector: Sector) {
     this.selectedSector = sector;
     console.log(sector.sector_ID);
-    this.selectedSpot = undefined; // Clear the selected spot when changing sector
+    this.selectedSpot = undefined;
   }
 
   selectParkingSpot(spot: ParkingSpot) {
@@ -55,13 +63,30 @@ export class MainContainerComponent implements OnInit {
     const payload: Reservation = {
       start_Time: start_Time,
       end_Time: end_Time,
-      license_Plate: this.formInput.license_Plate,
+      license_Plate: this.formInput.license_Plate.toUpperCase(),
       parking_Lot_ID: this.selectedSector.sector_ID,
       place_Number: this.selectedSpot.place_Number,
+      ClientEmail: this.formInput.ClientEmail,
     };
     console.log(payload);
     this.parkingService.reserveSpot(payload).subscribe((response) => {
-      console.log('Reservation successful:', response);
+      this.response = response;
+      this.showPopup = true;
+      console.log('Reservation status: ', response);
+    });
+  }
+
+  sumbitCancellation(){
+    const payload: Cancellation = {
+      license_Plate: this.cancelInput.license_Plate.toUpperCase(),
+      parking_Lot_ID: this.cancelInput.parking_lot_ID
+    }
+
+    console.log(payload);
+    this.parkingService.cancelReservation(payload).subscribe((response) => {
+      console.log('Cancellation status: ', response);
+      this.response = response;
+      this.showPopup = true;
     });
   }
 

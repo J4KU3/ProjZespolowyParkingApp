@@ -4,6 +4,7 @@ import { Sector } from './sector';
 import { ParkingSpot } from './parking-spot';
 import { Observable } from 'rxjs';
 import { Reservation } from './reservation';
+import { Cancellation } from './cancellation';
 
 @Injectable({
   providedIn: 'root'
@@ -25,4 +26,7 @@ export class ParkingService {
     return this.http.post(this.baseUrl + '/api/ParkingLot/AddNewReservation', data);
   }
 
+  cancelReservation(data: Cancellation): Observable<any> {
+    return this.http.delete(this.baseUrl + '/api/ParkingLot/CancelResevation', {body: data});
+  }
 }
