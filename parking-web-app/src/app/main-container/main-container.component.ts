@@ -42,7 +42,6 @@ export class MainContainerComponent implements OnInit {
 
   selectSector(sector: Sector) {
     this.selectedSector = sector;
-    console.log(sector.sector_ID);
     this.selectedSpot = undefined;
   }
 
@@ -54,12 +53,15 @@ export class MainContainerComponent implements OnInit {
     if(!this.selectedSector || !this.selectedSpot){
       return;
     }
-    if(this.formInput.start_Time === this.formInput.end_Time){
-      return;
-    }
     const start_Time = `${this.formInput.start_Date}T${this.formInput.start_Time}:00.000Z`;
     const end_Time = `${this.formInput.end_Date}T${this.formInput.end_Time}:00.000Z`;
-    
+    if(start_Time === end_Time){
+      return;
+    }
+    if(new Date(this.formInput.end_Date).getTime() < new Date(this.formInput.start_Date).getTime()){
+      return;
+    }
+
     const payload: Reservation = {
       start_Time: start_Time,
       end_Time: end_Time,
@@ -69,8 +71,9 @@ export class MainContainerComponent implements OnInit {
       ClientEmail: this.formInput.ClientEmail,
     };
     console.log(payload);
+    return;
     this.parkingService.reserveSpot(payload).subscribe((response) => {
-      this.response = response;
+      this.response = response.message;
       this.showPopup = true;
       console.log('Reservation status: ', response);
     });

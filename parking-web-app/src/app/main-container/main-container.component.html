@@ -49,7 +49,7 @@
             <input type="time" [(ngModel)]="formInput.end_Time" name="end_Time" required />
           </div>
         </div>
-        <button class="button" type="submit" [disabled]="!formInput.license_Plate || !formInput.start_Time || !formInput.end_Time || !selectedSpot">
+        <button class="button" type="submit" [disabled]="!formInput.license_Plate || !selectedSpot || !formInput.ClientEmail">
           <span>Reserve</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

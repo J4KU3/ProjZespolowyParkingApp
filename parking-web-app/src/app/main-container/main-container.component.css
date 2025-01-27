@@ -82,7 +82,12 @@
     max-width: 300px;
 }
 
-.button:hover {
+.button:disabled{
+    color: #696b6e;
+    cursor:default;
+}
+
+.button:hover:not(:disabled) {
     background: #202225;
     background: gray;
     outline: none;
@@ -95,11 +100,11 @@
     transition: transform 0.3s ease-in-out;
   }
   
-.button:hover svg {
+.button:hover:not(:disabled) svg {
     transform: translateX(5px);
   }
 
-.button:active {
+.button:active:not(:disabled) {
     transform: scale(0.95);
   }
 
