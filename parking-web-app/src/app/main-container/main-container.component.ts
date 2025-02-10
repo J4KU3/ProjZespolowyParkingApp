@@ -71,7 +71,6 @@ export class MainContainerComponent implements OnInit {
       ClientEmail: this.formInput.ClientEmail,
     };
     console.log(payload);
-    return;
     this.parkingService.reserveSpot(payload).subscribe((response) => {
       this.response = response.message;
       this.showPopup = true;
